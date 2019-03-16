@@ -9,6 +9,7 @@ export default class title extends Component {
       <div>
         <label htmlFor="title">Todo list</label>
         <Link style={{ float: "right", padding: 20 }} to="/task"><Button type="primary">+</Button></Link>
+        <hr></hr>
       </div>
     )
   }

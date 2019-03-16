@@ -5,6 +5,8 @@ export default class Task extends Component {
         super(props);
         this.state = {
             hasData: false,
+            items: [],
+            currentStatus: "",
         }
         this.onTaskChange = this.onTaskChange.bind(this);
     }
@@ -22,7 +24,7 @@ export default class Task extends Component {
             <div>
                 <label htmlFor="firstName">Task:</label>
                 <input name="task" onChange={this.onTaskChange} />
-                <button disabled={!hasData}>Add</button>
+                <button disabled={!hasData} onClick="">Add</button>
                 <button>Cancel</button>
             </div>
         )
