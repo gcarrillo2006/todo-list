@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Title } from './title';
-import { Task } from './task';
-import { TaskList } from './taskList';
+import Title from './title';
+import Task from './task';
+import TaskList from './taskList';
 
 export default class appRouter extends Component {
   render() {
